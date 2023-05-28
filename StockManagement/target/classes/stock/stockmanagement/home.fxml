@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stock.stockmanagement.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="471.0" prefWidth="760.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="459.0" prefWidth="287.0">
+               <children>
+                  <ListView fx:id="stockList" onMouseClicked="#itemClicked" prefHeight="403.0" prefWidth="223.0" />
+                  <Button layoutX="14.0" layoutY="418.0" mnemonicParsing="false" onAction="#addStockBtn" prefHeight="26.0" prefWidth="90.0" text="Add stock" />
+                  <Button layoutX="112.0" layoutY="419.0" mnemonicParsing="false" onAction="#removeStockBtn" text="Remove stock" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane fx:id="stockDetails" prefHeight="403.0" prefWidth="523.0">
+                     <children>
+                        <Label layoutX="278.0" layoutY="14.0" text="Portfolio" />
+                        <PieChart fx:id="stockChart" layoutX="14.0" layoutY="53.0" prefHeight="149.0" prefWidth="231.0" />
+                        <PieChart fx:id="sectorChart" layoutX="278.0" layoutY="53.0" prefHeight="135.0" prefWidth="231.0" />
+                        <PieChart fx:id="currencyChart" layoutX="278.0" layoutY="215.0" prefHeight="135.0" prefWidth="231.0" />
+                        <PieChart fx:id="countryChart" layoutX="14.0" layoutY="215.0" prefHeight="135.0" prefWidth="231.0" />
+                        <Label layoutX="158.0" layoutY="395.0" text="Value:" />
+                        <Label layoutX="340.0" layoutY="390.0" text="Dividend:" />
+                        <Label fx:id="totalChangeText" layoutX="326.0" layoutY="14.0" text="0%" />
+                     </children></Pane>
+                  <Label fx:id="valueText" layoutX="167.0" layoutY="413.0" text="0€" />
+                  <Label fx:id="dividendText" layoutX="360.0" layoutY="410.0" text="0€" />
+                  <Button layoutX="207.0" layoutY="412.0" mnemonicParsing="false" onAction="#saveStockBtn" text="Save portfolio" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

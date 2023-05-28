@@ -1,0 +1,6 @@
+Intel;INTC;26.4;3.0;30.0;EEUU;Communication Services;Dollar;2.2
+Alphabet;GOOGL;92.9;5.0;119.9;EEUU;Technology;Dollar;0.0
+Kroger;KR;45.0;10.0;42.0;EEUU;Consumer Defensive;Dollar;4.0
+Apple;APPL;120.0;50.0;160.0;EEUU;Technology;Dollar;1.18
+Línea Directa;LDA;0.93;30.0;0.86;Spain;Financial Services;Euro;5.62
+Endesa;ELE;19.0;20.0;20.0;Spain;Utilities;Euro;7.93
