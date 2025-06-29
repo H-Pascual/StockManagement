@@ -1,4 +1,4 @@
-============================================================
+
                  PROYECTO: GESTIÓN DE ACCIONES
                      Autor: Héctor Pascual Marín
                      Versión: 1.0
